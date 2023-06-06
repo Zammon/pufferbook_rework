@@ -1,6 +1,10 @@
-import React from "react";
-import { StyledEngineProvider } from '@mui/material/styles'
+import React, { ReactNode } from "react";
+import { StyledEngineProvider } from "@mui/material";
 
-export default function InjectTailwind({children}: any) {
-    return <StyledEngineProvider injectFirst>{children}</StyledEngineProvider>
+interface InjectTailwindType {
+    children: ReactNode;
+}
+
+export default function InjectTailwind(props:InjectTailwindType) {
+    return <StyledEngineProvider injectFirst>{props.children}</StyledEngineProvider>
 }
