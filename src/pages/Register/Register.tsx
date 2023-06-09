@@ -16,25 +16,25 @@ export default function Register() {
                     </div>
                 </div>
                 <div className='flex flex-col w-full h-auto mb-[22px]'>
-                    <label className='font-bold text-[15px] mb-[13px]'>
+                    <label className='font-bold text-[15px] mb-[13px] text-grayLabel'>
                         Email
                     </label>
                     <BaseInput placeholder='please input your email' />
                 </div>
                 <div className='flex flex-col w-full h-auto mb-[22px]'>
-                    <label className='font-bold text-[15px] mb-[13px]'>
+                    <label className='font-bold text-[15px] mb-[13px] text-grayLabel'>
                         Username
                     </label>
                     <BaseInput placeholder='please input your username' />
                 </div>
                 <div className='flex flex-col w-full h-auto mb-[22px]'>
-                    <label className='font-bold text-[15px] mb-[13px]'>
+                    <label className='font-bold text-[15px] mb-[13px] text-grayLabel'>
                         Password
                     </label>
                     <BaseInput placeholder='please input your password' />
                 </div>
                 <div className='flex flex-col w-full h-auto mb-[20px]'>
-                    <label className='font-bold text-[15px] mb-[13px]'>
+                    <label className='font-bold text-[15px] mb-[13px] text-grayLabel'>
                     Confirm password
                     </label>
                     <BaseInput placeholder='please confirm your password' />

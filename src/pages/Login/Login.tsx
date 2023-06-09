@@ -35,7 +35,7 @@ export default function Login() {
                             </div>
                         </div>
                         <Link to="/forgetpassword" className='trasitions-brightness-strong flex font-bold no-underline text-grayLabel w-auto h-full items-center text-[12px] cursor-pointer'>
-                            Forgot Password?
+                            Forgot password?
                         </Link>
                     </div>
                     <BaseButton text='SIGN IN' textBold={true} height='h-[42px]' />
