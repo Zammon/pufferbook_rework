@@ -1,0 +1,23 @@
+* {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
+  font-family: 'Prompt', sans-serif;
+}
+
+.trasitions-brightness {
+  transition: all .5s ease;
+  &:hover {
+    transition: all .3s ease;
+    filter: brightness(1.1);
+  }
+}
+
+.trasitions-brightness-strong {
+  transition: all .3s ease;
+  &:hover {
+    transition: all .3s ease;
+    filter: brightness(0.8);
+  }
+}
+
