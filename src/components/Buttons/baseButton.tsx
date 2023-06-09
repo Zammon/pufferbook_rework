@@ -5,9 +5,10 @@ export default function BaseButton({
     url = "#",
     text = "Button", 
     styled,
-    fontSize,
-    width,
-    height,
+    fontSize = "text-[13px]",
+    width = "w-full", 
+    height = "h-[42px]",
+    margin = '',
     borderButton = false,
     textBold = false, 
     onClick
@@ -17,13 +18,13 @@ export default function BaseButton({
             {
                 borderButton ?
                 <button 
-                className={styled ?? `${textBold ? 'font-bold':'font-light'} ${fontSize? fontSize:'text-[13px]'} min-h-10 ${height ? height :'h-[42px]'} ${width ? width :'w-full'} px-2 text-orangPuf bg-whitePuf border-solid border-orangPuf border-[2px] rounded-md cursor-pointer`} 
+                className={styled ?? `${textBold ? 'font-bold':'font-light'} ${margin} ${fontSize} ${height} ${width} min-h-10  px-2 text-orangPuf bg-whitePuf border-solid border-orangPuf border-[2px] rounded-md cursor-pointer`} 
                 onClick={onClick}>
                     {text}
                 </button>
                 :
                 <button 
-                className={styled ?? `${textBold ? 'font-bold':'font-light'} ${fontSize? fontSize:'text-[13px]'} trasitions-brightness min-h-10 ${height ? height :'h-[42px]'} ${width ? width :'w-full'} px-2 text-whitePuf bg-orangPuf border-none rounded-md cursor-pointer`} 
+                className={styled ?? `${textBold ? 'font-bold':'font-light'} ${margin} ${fontSize} ${height} ${width} trasitions-brightness min-h-10  px-2 text-whitePuf bg-orangPuf border-none rounded-md cursor-pointer`} 
                 onClick={onClick}>
                     {text}
                 </button>

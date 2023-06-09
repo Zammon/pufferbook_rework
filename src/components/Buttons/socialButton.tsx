@@ -12,7 +12,7 @@ const socialType = Object.freeze({
 });
 
 export default function SocialButton({
-    url="/", 
+    url="#", 
     type,
     styled,
     size = "33px",
@@ -36,8 +36,7 @@ export default function SocialButton({
             default :
                 return setIcon(<>N</>);
         }
-    },[type]
-    )
+    },[type])
 
     return(
         <Link 

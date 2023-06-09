@@ -13,6 +13,7 @@ export interface BaseButtonInterface {
     styled?: string;
     width?: string;
     height?: string;
+    margin?: string;
     borderButton?: boolean;
     url?: string;
     onClick?: ()=>void;

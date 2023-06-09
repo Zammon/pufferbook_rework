@@ -44,9 +44,7 @@ export default function Login() {
                         <div className='mx-[15px] text-grayLabel'>or</div>
                         <div className='h-[1px] w-[100%] bg-grayBorder'></div>
                     </div>
-                    <Link to="/register" className='mb-[22px]'>
-                        <BaseButton text='SIGN UP' textBold={true} borderButton={true} height='h-[42px]' />
-                    </Link>
+                    <BaseButton url='/register' margin='mb-[25px]' text='SIGN UP' textBold={true} borderButton={true} height='h-[42px]' />
                     <div className='flex h-[33px] w-full justify-center'>
                         <SocialButton url="/twitter" styled='mr-[26px]' type='twitter' size='w-[33px]' />
                         <SocialButton url="/google" styled='mr-[26px]' type='google' size='w-[33px]' />
