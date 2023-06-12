@@ -5,6 +5,24 @@
   font-family: 'Prompt', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color:black;
+}
+
+.base-box {
+  border-radius: 6px;
+  border: 1px solid #E6E6E6;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.trasitions {
+  transition: all .5s ease;
+  &:hover {
+    transition: all .3s ease;
+  }
+}
+
 .trasitions-brightness {
   transition: all .5s ease;
   &:hover {
@@ -18,6 +36,13 @@
   &:hover {
     transition: all .3s ease;
     filter: brightness(0.8);
+  }
+}
+
+.items-notification {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0px;
   }
 }
 

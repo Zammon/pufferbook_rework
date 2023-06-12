@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { ProfileReducer } from '../../Interfaces/profileInterface';
+import { ProfileReducer } from '../../Interfaces/reduxInterfaces/profileInterface';
 
 const initialState:ProfileReducer = {
     profile: {

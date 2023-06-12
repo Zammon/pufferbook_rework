@@ -1,6 +1,5 @@
 import { CheckBoxInputInterface } from "../../Interfaces/inputInterface";
 import { BsCheckLg } from 'react-icons/bs';
-import './inputStyle.scss'
 import { useEffect, useState } from "react";
 
 export default function CheckBoxInput({
@@ -27,15 +26,11 @@ export default function CheckBoxInput({
             >
             {
                 statusCheckBox ?
-                (
-                    <div className={`flex justify-center items-center w-full h-full ${bgActive}`}>
-                        <BsCheckLg size="10rem" fill="#fff" />
-                    </div>
-                ):
-                (
-                    <div className={` w-full h-full ${bgNoneActive}`}>
-                    </div>
-                )
+                <div className={`flex justify-center items-center w-full h-full ${bgActive}`}>
+                    <BsCheckLg size="10rem" fill="#fff" />
+                </div>
+                :
+                <div className={` w-full h-full ${bgNoneActive}`}></div>
             }
             
         </div>

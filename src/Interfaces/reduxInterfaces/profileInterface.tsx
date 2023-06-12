@@ -1,4 +1,4 @@
-import { DetailPosts, SimpleComic, SimpleNovel } from "./postInterface";
+import { DetailPosts, SimpleComic, SimpleNovel } from "../postInterface";
 
 export interface SocialProfile {
     type: string;

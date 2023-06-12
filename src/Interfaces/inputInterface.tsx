@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface BaseInputInterface {
     name?: string;
     type?: "text"|"password"|"number"|"email"|"checkbox"|"radio";
@@ -14,4 +16,13 @@ export interface CheckBoxInputInterface {
     bgActive?: string;
     bgNoneActive?: string;
     onClick?: (status:boolean)=>void;
+}
+
+export interface SearchInputInterface {
+    icon?: string | ReactNode;
+    iconSize?: string;
+    placeholder?: string;
+    styled?: string;
+    onChange?: (e:any)=>void;
+    onClick?: ()=>void;
 }

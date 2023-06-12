@@ -1,28 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { ProfileReducer } from '../../Interfaces/profileInterface';
+import { FeedInterface } from '../../Interfaces/reduxInterfaces/feedInterface';
 
-const initialState:ProfileReducer = {
-    profile: {
-        firstname:"",
-        lastname:"",
-        bio:"",
-        address:"",
-        social: [],
-        setting:""
-    },
+const initialState:FeedInterface = {
     posts: [],
     novels: [],
     comics: []
 }
 
 const FeedReducer = createSlice({
-    name: 'profile',
+    name: 'feed',
     initialState: initialState,
     reducers: {
-        fecthProfile: (state, actions)=> {
-            state.profile = actions.payload
-        },
-
         fecthPostss: (state, actions)=> {
             state.posts = actions.payload
         },
@@ -37,5 +25,5 @@ const FeedReducer = createSlice({
     } 
 });
 
-export const { fecthProfile, fecthPostss, fecthNovels, fecthComics } = FeedReducer.actions;
+export const { fecthPostss, fecthNovels, fecthComics } = FeedReducer.actions;
 export default FeedReducer.reducer;

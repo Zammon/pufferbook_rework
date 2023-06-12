@@ -6,17 +6,39 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import ForgetPassword from './pages/ForgetPassword/ForgotPassword';
 import Error from './pages/Errors/error';
+import Content from './pages/Contents/Content';
+import BaseNavbar from './components/Navbars/baseNavbar';
+import Profile from './pages/Profiles/Profile';
 
 function App() {
+  // return(
+  //   <div className='flex flex-col w-full h-auto bg-gray-50 '>
+  //     <Routes>
+  //           <Route path="/" element={<Home/>} />
+  //           <Route path="/home" element={<Home />} />
+  //           <Route path="/content">
+  //             <Route path=":category" element={<Content />} />
+  //           </Route>
+  //           <Route path='*' element={<Error />} />
+  //       </Routes>
+  //   </div>
+  // )
+
   return (
-    <div className='w-auto min-w-full h-auto min-h-scree bg-gray-50 flex'>
+    <div className='flex flex-col w-full h-auto bg-gray-50 '>
       <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgetpassword" element={<ForgetPassword />} />
           <Route path="/home" element={<Home />} />
-          <Route path='*' element={<Error />} />
+          <Route path="/contents">
+            <Route path=":category" element={<Content />} />
+          </Route>
+          <Route path="/profile">
+            <Route path=":profileID" element={<Profile />} />
+          </Route>
+          <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );

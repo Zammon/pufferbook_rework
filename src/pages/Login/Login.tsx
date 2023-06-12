@@ -38,7 +38,7 @@ export default function Login() {
                             Forgot password?
                         </Link>
                     </div>
-                    <BaseButton text='SIGN IN' textBold={true} height='h-[42px]' />
+                    <BaseButton url='/' text='SIGN IN' textBold={true} height='h-[42px]' />
                     <div className='flex items-center my-[12px] '>
                         <div className='h-[1px] w-[100%] bg-grayBorder'></div>
                         <div className='mx-[15px] text-grayLabel'>or</div>
