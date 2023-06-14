@@ -1,26 +1,16 @@
 import { Link } from "react-router-dom";
-
-export interface ItemNotificationInterface {
-    img?: string;
-    name?: string;
-    time?: string;
-    detail?: string;
-    url: {
-        link: string;
-        type: string;
-    }
-}
+import { NotificationsInterface } from "../../Interfaces/reduxInterfaces/navbarInterface";
 
 interface NotificationItemInterface {
-    items: ItemNotificationInterface[];
+    items: NotificationsInterface[];
 }
 
-function Items({img, name, time, detail, url}:ItemNotificationInterface) {
+function Items({profile, name, time, detail, url}:NotificationsInterface) {
     return(
         <Link className="flex w-auto h-auto no-underline items-notification" to={url?.link ?? "#"}>
             <div className="flex h-auto min-h-[50px] w-full">
                 <div className="flex justify-center items-center rounded-[6px] w-[51px] h-[51px] min-w-[51px] mr-[16px] bg-grayLabel overflow-hidden">
-                    <img src={img} alt="" />
+                    <img className="base-images" src={profile} alt="" />
                 </div>
                 <div className="flex flex-col w-full pr-[10px]">
                     <div className="grid grid-cols-2">
@@ -49,7 +39,7 @@ export default function NotificationDropdown({items = []}:NotificationItemInterf
             <div className="flex flex-col w-full h-full overflow-auto ">
                 {
                     items.map((item, key)=>{
-                        return <Items key={key} img={item.img} name={item.name} detail={item.detail} time={item.time} url={item.url}/>
+                        return <Items key={key} profile={item.profile} name={item.name} detail={item.detail} time={item.time} url={item.url}/>
                     })
                 }
             </div>

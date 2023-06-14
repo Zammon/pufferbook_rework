@@ -15,8 +15,8 @@ export default function TextBoxButton({
     styled = "trasitions flex justify-center items-center rounded-[6px] cursor-pointer",
 }:TextBoxInterface) {
     return(
-        <Link to={url}>
-            <div className={`${styled} ${width} ${height} ${fontWeight} ${margin} ${padding} ${bgColor} ${bgColorHover} ${fontSize}`}>
+        <Link to={url} className={margin}>
+            <div className={`${styled} ${width} ${height} ${fontWeight} ${padding} ${bgColor} ${bgColorHover} ${fontSize}`}>
                 {text}
             </div>
         </Link>

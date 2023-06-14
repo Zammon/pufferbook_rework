@@ -1,0 +1,30 @@
+// Buttons
+
+// Inputs
+
+// Navbars
+
+// Dropdowns
+
+    // BaseDropdown
+    .base-dropdown-conponent {
+        position: relative;
+        .amount {
+            cursor: pointer;
+            position: absolute;
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            width: 15px;
+            height: 15px;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #FF8261;
+            outline: 3px solid #424242;
+        }
+    }

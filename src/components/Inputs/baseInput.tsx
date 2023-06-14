@@ -8,9 +8,11 @@ export default function BaseInput({
     textValidation = 'error',
     statusValidation = false,
     onChange}:BaseInputInterface) {
+
+
     return(
-        <div className="base-input-component flex flex-col w-auto h-auto ">
-            <input 
+        <div className="base-input-component flex flex-col w-auto h-auto cursor-pointer">
+            <input
                 className={`${styled} mb-2 placeholder-grayPlaceholder`}  
                 name={name}
                 type={type}  

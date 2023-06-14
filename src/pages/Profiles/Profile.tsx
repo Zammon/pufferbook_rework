@@ -1,16 +1,12 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom"
+import { Route, Routes, useParams } from "react-router-dom"
 
 export default function Profile() {
-    const { profileID } = useParams();
-
-    useEffect(()=>{
-        console.log(profileID);
-    },[])
+    const { id } = useParams();
 
     return(
         <div className="">
-            Profile: {profileID}
+            Profile: {id}
         </div>
     )
 }
